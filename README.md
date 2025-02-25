@@ -1,10 +1,10 @@
-# flofish
+# napari-flofish
 
-[![License MIT](https://img.shields.io/pypi/l/napari-flofish.svg?color=green)](https://github.com/LaToyaVanderB/napari-flofish/raw/main/LICENSE)
+<!-- [![License MIT](https://img.shields.io/pypi/l/napari-flofish.svg?color=green)](https://github.com/LaToyaVanderB/napari-flofish/raw/main/LICENSE) -->
 <!-- [![PyPI](https://img.shields.io/pypi/v/napari-flofish.svg?color=green)](https://pypi.org/project/napari-flofish) -->
-[![Python Version](https://img.shields.io/pypi/pyversions/napari-flofish.svg?color=green)](https://python.org)
+<!-- [![Python Version](https://img.shields.io/pypi/pyversions/napari-flofish.svg?color=green)](https://python.org) -->
 <!-- [![codecov](https://codecov.io/gh/LaToyaVanderB/napari-flofish/branch/main/graph/badge.svg)](https://codecov.io/gh/LaToyaVanderB/napari-flofish) -->
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-flofish)](https://napari-hub.org/plugins/napari-flofish)
+<!-- [![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-flofish)](https://napari-hub.org/plugins/napari-flofish) -->
 
 A plugin to use BigFish from napari
 
@@ -21,10 +21,10 @@ https://napari.org/stable/plugins/index.html
 -->
 
 ## Installation
-
+<!-- 
 You can install `napari-flofish` via [pip]:
 
-    pip install napari-flofish
+    pip install napari-flofish -->
 
 
 
