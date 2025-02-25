@@ -1,11 +1,10 @@
 # flofish
 
-[![License MIT](https://img.shields.io/pypi/l/flofish.svg?color=green)](https://github.com/LaToyaVanderB/napari-flofish/raw/main/LICENSE)
-[![PyPI](https://img.shields.io/pypi/v/flofish.svg?color=green)](https://pypi.org/project/flofish)
-[![Python Version](https://img.shields.io/pypi/pyversions/flofish.svg?color=green)](https://python.org)
-[![tests](https://github.com/LaToyaVanderB/flofish/workflows/tests/badge.svg)](https://github.com/LaToyaVanderB/flofish/actions)
-[![codecov](https://codecov.io/gh/LaToyaVanderB/flofish/branch/main/graph/badge.svg)](https://codecov.io/gh/LaToyaVanderB/flofish)
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/flofish)](https://napari-hub.org/plugins/napari-flofish)
+[![License MIT](https://img.shields.io/pypi/l/napari-flofish.svg?color=green)](https://github.com/LaToyaVanderB/napari-flofish/raw/main/LICENSE)
+<!-- [![PyPI](https://img.shields.io/pypi/v/napari-flofish.svg?color=green)](https://pypi.org/project/napari-flofish) -->
+[![Python Version](https://img.shields.io/pypi/pyversions/napari-flofish.svg?color=green)](https://python.org)
+<!-- [![codecov](https://codecov.io/gh/LaToyaVanderB/napari-flofish/branch/main/graph/badge.svg)](https://codecov.io/gh/LaToyaVanderB/napari-flofish) -->
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/napari-flofish)](https://napari-hub.org/plugins/napari-flofish)
 
 A plugin to use BigFish from napari
 
