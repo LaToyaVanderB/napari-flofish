@@ -31,18 +31,18 @@ You can install `napari-flofish` via [pip]:
 
 To install latest development version :
 
-    pip install git+https://github.com/LaToyaVanderB/flofish.git
+    pip install git+https://github.com/LaToyaVanderB/napari-flofish.git
 
 
 ## Contributing
 
-Contributions are very welcome. Tests can be run with [tox], please ensure
+Contributions are very welcome. Tests can be run with [pytest], please ensure
 the coverage at least stays the same before you submit a pull request.
 
 ## License
 
-Distributed under the terms of the [BSD-3] license,
-"flofish" is free and open source software
+Distributed under the terms of the [MIT] license,
+"napari-flofish" is free and open source software
 
 ## Issues
 
@@ -59,7 +59,7 @@ If you encounter any problems, please [file an issue] along with a detailed desc
 [Mozilla Public License 2.0]: https://www.mozilla.org/media/MPL/2.0/index.txt
 [napari-plugin-template]: https://github.com/napari/napari-plugin-template
 
-[file an issue]: https://github.com/LaToyaVanderB/flofish/issues
+[file an issue]: https://github.com/LaToyaVanderB/napari-flofish/issues
 
 [napari]: https://github.com/napari/napari
 [tox]: https://tox.readthedocs.io/en/latest/
