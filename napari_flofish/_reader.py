@@ -106,7 +106,7 @@ def read_smfish_json(path):
             focus = 20
         else:
             focus = np.max(focus)
-        # how do I access the current viewer from here?
+        # how to access the current viewer from here?
         # viewer.dims.set_point(0, focus)
 
         for ch in img['results'].keys():

@@ -19,7 +19,7 @@ import numpy as np
 
 
 
-def smRNAfish_Ecoli_rpoD_rnlAB_hipBA() -> List[LayerData]:
+def smRNAfish_Ecoli_rpoD_rnlAB_hipBA(cleanup: True) -> List[LayerData]:
     """
     Download test data from Zenodo
     Unzip them to _tests/data/expected directory
@@ -32,7 +32,7 @@ def smRNAfish_Ecoli_rpoD_rnlAB_hipBA() -> List[LayerData]:
     appdir = AppDirs("napari-flofish")
     datadir = Path(appdir.user_data_dir)
     datadir.mkdir(parents=True, exist_ok=True)
-    get_smRNAfish_Ecoli_rpoD_rnlAB_hipBA(datadir)
+    get_smRNAfish_Ecoli_rpoD_rnlAB_hipBA(datadir, cleanup)
 
     # make layer data tuples
     layer_data_tuples = []
@@ -42,7 +42,7 @@ def smRNAfish_Ecoli_rpoD_rnlAB_hipBA() -> List[LayerData]:
     return layer_data_tuples
 
 
-def get_smRNAfish_Ecoli_rpoD_rnlAB_hipBA(datadir: Path):
+def get_smRNAfish_Ecoli_rpoD_rnlAB_hipBA(datadir: Path, cleanup: True):
     # dataset = "smRNAfish-Ecoli-rpoD-rnlAB-hipBA"
     uri = "https://zenodo.org/records/14879324/files/test.zip"
 
@@ -57,7 +57,8 @@ def get_smRNAfish_Ecoli_rpoD_rnlAB_hipBA(datadir: Path):
         myzip.extractall(datadir)
         
     # clean up
-    zipfilename.unlink()
+    if cleanup:
+        zipfilename.unlink()
         
     
 def make_sample_data():

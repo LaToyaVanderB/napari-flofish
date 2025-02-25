@@ -6,5 +6,5 @@ from napari_flofish._sample_data import (
 
 
 def test_smRNAfish_Ecoli_rpoD_rnlAB_hipBA():
-    layers = smRNAfish_Ecoli_rpoD_rnlAB_hipBA()
+    layers = smRNAfish_Ecoli_rpoD_rnlAB_hipBA(cleanup=False)
     pass
