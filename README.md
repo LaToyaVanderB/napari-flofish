@@ -1,11 +1,11 @@
 # flofish
 
-[![License BSD-3](https://img.shields.io/pypi/l/flofish.svg?color=green)](https://github.com/LaToyaVanderB/flofish/raw/main/LICENSE)
+[![License MIT](https://img.shields.io/pypi/l/flofish.svg?color=green)](https://github.com/LaToyaVanderB/napari-flofish/raw/main/LICENSE)
 [![PyPI](https://img.shields.io/pypi/v/flofish.svg?color=green)](https://pypi.org/project/flofish)
 [![Python Version](https://img.shields.io/pypi/pyversions/flofish.svg?color=green)](https://python.org)
 [![tests](https://github.com/LaToyaVanderB/flofish/workflows/tests/badge.svg)](https://github.com/LaToyaVanderB/flofish/actions)
 [![codecov](https://codecov.io/gh/LaToyaVanderB/flofish/branch/main/graph/badge.svg)](https://codecov.io/gh/LaToyaVanderB/flofish)
-[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/flofish)](https://napari-hub.org/plugins/flofish)
+[![napari hub](https://img.shields.io/endpoint?url=https://api.napari-hub.org/shields/flofish)](https://napari-hub.org/plugins/napari-flofish)
 
 A plugin to use BigFish from napari
 
@@ -41,7 +41,7 @@ the coverage at least stays the same before you submit a pull request.
 
 ## License
 
-Distributed under the terms of the [MIT] license,
+Distributed under the terms of the [BSD-3] license,
 "napari-flofish" is free and open source software
 
 ## Issues
@@ -63,5 +63,6 @@ If you encounter any problems, please [file an issue] along with a detailed desc
 
 [napari]: https://github.com/napari/napari
 [tox]: https://tox.readthedocs.io/en/latest/
+[pytest]: https://docs.pytest.org/
 [pip]: https://pypi.org/project/pip/
 [PyPI]: https://pypi.org/
