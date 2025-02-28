@@ -18,7 +18,6 @@ from typing import List
 import numpy as np
 
 
-
 def smRNAfish_Ecoli_rpoD_rnlAB_hipBA(cleanup: True) -> List[LayerData]:
     """
     Download test data from Zenodo

@@ -1,5 +1,5 @@
 name: napari-flofish
-display_name: Napari FloFish
+display_name: Napari Flofish
 # use 'hidden' to remove plugin from napari hub search results
 visibility: hidden
 # see https://napari.org/stable/plugins/technical_references/manifest.html#fields for valid categories
@@ -24,47 +24,16 @@ contributions:
     - id: napari-flofish.spot_decomposition_magic_widget
       python_name: napari_flofish:spot_decomposition_magic_widget
       title: Make spot decomposition magic widget
-#    - id: napari-flofish.write_multiple
-#      python_name: napari_flofish._writer:write_multiple
-#      title: Save multi-layer data with Napari BigFish
-#    - id: napari-flofish.write_single_image
-#      python_name: napari_flofish._writer:write_single_image
-#      title: Save image data with Napari BigFish
     - id: napari-flofish.make_sample_data
       python_name: napari_flofish._sample_data:make_sample_data
       title: Load random sample data
     - id: napari-flofish.smRNAfish_Ecoli_rpoD_rnlAB_hipBA
       python_name: napari_flofish._sample_data:smRNAfish_Ecoli_rpoD_rnlAB_hipBA
       title: Load test data from flofish
-#    - id: napari-flofish.make_container_widget
-#      python_name: napari_flofish:ImageThreshold
-#      title: Make threshold Container widget
-#    - id: napari-flofish.make_magic_widget
-#      python_name: napari_flofish:threshold_magic_widget
-#      title: Make threshold magic widget
-#    - id: napari-flofish.make_function_widget
-#      python_name: napari_flofish:threshold_autogenerate_widget
-#      title: Make threshold function widget
-#    - id: napari-flofish.make_qwidget
-#      python_name: napari_flofish:ExampleQWidget
-#      title: Make example QWidget
-#    - id: napari-flofish.make_filtering_widget
-#      python_name: napari_flofish:background_filtering_autogenerate_widget
-#      title: Make background filtering function widget
-#    - id: napari-flofish.make_spot_detection_widget
-#      python_name: napari_flofish:spot_detection_autogenerate_widget
-#      title: Make spot detection function widget
   readers:
     - command: napari-flofish.get_reader
       accepts_directories: false
       filename_patterns: ['*.json']
-#  writers:
-#    - command: napari-flofish.write_multiple
-#      layer_types: ['image*','labels*']
-#      filename_extensions: []
-#    - command: napari-flofish.write_single_image
-#      layer_types: ['image']
-#      filename_extensions: ['.npy']
   sample_data:
     - command: napari-flofish.make_sample_data
       display_name: Example data
@@ -83,16 +52,5 @@ contributions:
       display_name: Threshold spots
     - command: napari-flofish.spot_decomposition_magic_widget
       display_name: Decompose spots
-#    - command: napari-flofish.make_container_widget
-#      display_name: Container Threshold
-#    - command: napari-flofish.make_magic_widget
-#      display_name: Magic Threshold
-#    - command: napari-flofish.make_function_widget
-#      autogenerate: true
-#      display_name: Autogenerate Threshold
-#    - command: napari-flofish.make_qwidget
-#      display_name: Example QWidget
-#    - command: napari-flofish.make_filtering_widget
-#      autogenerate: true
-#      display_name: Background filter
+
 

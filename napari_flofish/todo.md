@@ -1,36 +1,51 @@
 Plugin todo:
-- Segmentation widget
-- Make sample data from zenodo
-- Container widget
+- segmentation widget
+- container widget
 - display widget return values in widget
 - project all layers
 - compute statistics (=assign spots)
 - restrict layers available in pulldown menus
 - make widget parameters depend on widget argument (i.e. max threshold value depends on layer)
 - async processing
-
-Manual:
-1. use plugin as exploration tool to find good spot detection parameters
-2. use pipeline engine to process set of pictures in reproducible fashion
+- fix scale
+- upload packages
+- fix Omnipose GPU 
+   - do not load automatically at start up
+   - deal with no GPU
   
 Set up environment:
-1. napari
-   1. check that console works
-   2. open vsi files: conda install aicsimageio
-2. napari plugin development 
-   1. conda install napari-flofish
-3. project
-    1. omnipose: install from git clone on MacOS
-        1. cd /Users/adele/Projects/omnipose && pip install -e .
-        2. cd /Users/adele/Projects/cellpose-omni && pip install -e .
-        3. GUI: omnipose
-    2. pip install jsonpickle bioio bioio-ome-tiff bioio-ome-zarr bioio-bioformats
-    3. pip install big-fish
-    4. conda install scyjava
-    5. export JAVAHOME=/Users/adele/miniconda3/envs/omnipose/lib/jvm
-    6. set $JAVA_HOME for bioio-bioformats
-    7. edit peakdetect.py to: from scipy.fft import ifft
-    8. check that tests pass
-4. PyCharm
-   1. Add project dirs to PYTHONPATH (in Settings)
+
+   - Omnipose
+
+      On MacOS: install from git source or git clone on MacOS in a conda env with python<=3.10.11 (see [this issue](https://github.com/kevinjohncutler/omnipose/issues/14))
+
+      First add `jupyterlab` to `omnipose_mac_environment.yml` from [Omnipose](https://omnipose.readthedocs.io/installation.html) repository, then:
+      ```
+      conda env create --name myenv --file /Volumes/DataDrive/omnipose_mac_environment.yml
+      conda activate myenv
+      pip install git+https://github.com/kevinjohncutler/omnipose.git
+      pip install git+https://github.com/kevinjohncutler/cellpose-omni.git
+      ```
+
+   - Omnipose GUI
+
+      Run `omnipose` from the command line.
+
+
+   - Other
+      ```
+      conda install -c conda-forge scyjava
+      pip install "napari[pyqt6]"
+      pip install bioio bioio_bioformats big-fish jsonpickle pathlib  
+      ```
+   - Might be needed:
+      - `export JAVA_HOME=/Users/adele/miniconda3/envs/myenv/lib/jvm`
+      - deactivate and reactivate myenv for `scyjava` to work
+      - edit `peakdetect.py` fft import line to: `from scipy.fft import fft, ifft`
+      - `pip install "napari[pyqt6]"`
+
+   
+
+   
+
 

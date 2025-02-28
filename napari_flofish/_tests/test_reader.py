@@ -5,7 +5,7 @@ def test_reader(make_napari_viewer):
     """An example of how you might test your plugin."""
 
     # read data
-    my_test_file = '/Volumes/KINGSTON/Florence/smFISH/zenodo/smfish-analysis/tests/data/exp16/output/MG1655_GLU_OD_0.3_left_02/img.json'
+    my_test_file = 'napari_flofish/_tests/data/exp16/output/MG1655_GLU_OD_0.3_left_02/img.json'
     reader = napari_get_reader(my_test_file)
     assert callable(reader)
 

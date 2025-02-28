@@ -58,7 +58,7 @@ spot_radius = (800, 120, 120)
 def test_read_in_vsi_widget(make_napari_viewer):
     viewer = make_napari_viewer()
     my_widget = read_in_vsi_widget()
-    base_dir = "napari_flofish/_tests/data/exp16/input"
+    base_dir = "napari_flofish/_tests/data/exp16"
     cfg_file = Path(base_dir) / "config.json"
     vsi_file = "MG1655_GLU_OD_0.3_left_CY5, CY3.5 NAR, CY3, DAPI_02.vsi"
     cell_file = "MG1655_GLU_OD_0.3_left_DIC_02.tif"

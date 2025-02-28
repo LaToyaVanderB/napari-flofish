@@ -21,16 +21,26 @@ https://napari.org/stable/plugins/index.html
 -->
 
 ## Installation
-<!-- 
+
 You can install `napari-flofish` via [pip]:
 
-    pip install napari-flofish -->
-
+    pip install napari-flofish
 
 
 To install latest development version :
 
+    pip install git+https://github.com/LaToyaVanderB/flofish.git
     pip install git+https://github.com/LaToyaVanderB/napari-flofish.git
+
+
+## Dependencies
+
+Dependencies are listed in `pyproject.toml`
+
+You can install `flofish` via [pip]:
+
+    pip install flofish
+   
 
 
 ## Contributing

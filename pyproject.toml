@@ -1,7 +1,7 @@
 [project]
 name = "napari-flofish"
 dynamic = ["version"]
-description = "A plugin to use BigFish from napari"
+description = "A very basic plugin to use BigFish from napari"
 readme = "README.md"
 license = {file = "LICENSE"}
 authors = [
@@ -28,7 +28,9 @@ dependencies = [
     "numpy",
     "magicgui",
     "qtpy",
+    "napari",
     "scikit-image",
+    "flofish"
 ]
 
 [project.optional-dependencies]
@@ -45,10 +47,10 @@ testing = [
 napari-flofish = "napari_flofish:napari.yaml"
 
 [project.urls]
-"Bug Tracker" = "https://github.com/LaToyaVanderB/flofish/issues"
-"Documentation" = "https://github.com/LaToyaVanderB/flofish#README.md"
-"Source Code" = "https://github.com/LaToyaVanderB/flofish"
-"User Support" = "https://github.com/LaToyaVanderB/flofish/issues"
+"Bug Tracker" = "https://github.com/LaToyaVanderB/napari-flofish/issues"
+"Documentation" = "https://github.com/LaToyaVanderB/napari-flofish#README.md"
+"Source Code" = "https://github.com/LaToyaVanderB/napari-flofish"
+"User Support" = "https://github.com/LaToyaVanderB/napari-flofish/issues"
 
 [build-system]
 requires = ["setuptools>=42.0.0", "wheel"]
